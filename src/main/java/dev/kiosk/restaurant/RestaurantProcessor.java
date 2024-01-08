@@ -8,6 +8,7 @@ import dev.kiosk.customer.Customer;
 public class RestaurantProcessor {
 	// 선택한 식당의 메뉴 리스트 리턴
 	public List<String> findMenu(List<Restaurant> restaurants, String name){
+
 		List<String> menus = new ArrayList<String>();
 		
 		for(Restaurant restaurant: restaurants) {
@@ -15,6 +16,10 @@ public class RestaurantProcessor {
 				menus.add(restaurant.getMenu());
 			}
 		}
+//		System.out.println("menus = " + menus);
+//		System.out.println("resutaurants = " + restaurants);
+		System.out.println(name);
+		System.out.println("menus = " + menus);
 		return menus;
 	}
 	
